@@ -1,5 +1,6 @@
 require "pry"
 require "CSV"
+require "pg"
 
 def categoryTotal(people, account, category, total = 0)
 	people[account][category].each {|amount| total += amount}
